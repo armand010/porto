@@ -7,21 +7,19 @@ import {motion, useInView} from 'framer-motion'
 const projectData = [
     {
         id: 1,
-        title: 'Project 1',
-        description: 'Description of Project 1',
+        title: 'HRIS',
+        description: 'A comprehensive web-based system designed to streamline HR operations, including employee management, attendance tracking, and payroll processing. Built with a responsive UI for seamless access and intuitive user interaction. This project focuses on improving administrative efficiency within organizations.',
         imgUrl: '/images/project1.jpg',
-        tag: ['All', 'UI/UX'],
-        gitUrl: '/',
-        previewUrl: '/'
+        tag: ['All', 'Website'],
+        gitUrl: 'https://github.com/rickytedjo/HRIS'
     },
     {
         id: 2,
-        title: 'Project 2',
-        description: 'Description of Project 2',
+        title: 'Kawan Desa',
+        description: 'A community-focused information system tailored for village administration. Kawan Desa simplifies RT/RW data management, facilitates communication between local authorities and citizens, and enhances transparency in public services. Developed with user-centric design for easy adoption in rural areas.',
         imgUrl: '/images/project2.jpg',
-        tag: ['All', 'Website','UI/UX'],
-        gitUrl: '/',
-        previewUrl: '/'
+        tag: ['All', 'Website'],
+        gitUrl: 'https://github.com/ahmadAria001/KawanDesa'
     },
 ]
 
@@ -46,8 +44,8 @@ const ProjectSection = () => {
       <h2 className='text-center text-4xl font-bold text-white mt-4 mb-4'>
         My Project
       </h2>
-      <div className='text-black flex flex-row flex-wrap justify-center items-center gap-4 py-3'>
-        {['All', 'Website', 'UI/UX'].map((tag) => (
+      <div className='text-white flex flex-row flex-wrap justify-center items-center gap-4 py-3'>
+        {['All', 'Website', 'Mobile'].map((tag) => (
           <ProjectTag
             key={tag}
             name={tag}
@@ -72,7 +70,6 @@ const ProjectSection = () => {
               description={project.description}
               tags={project.tag}
               gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
             />
           </motion.li>
         )}

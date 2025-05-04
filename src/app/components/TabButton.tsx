@@ -12,7 +12,7 @@ const variants = {
   animate: { width: 'calc(100% - 0.75rem)' },
 }
 const TabButton: React.FC<TabButtonProps> = ({ active, selectTab, children }) => {
-const buttonClasses = active ? 'text-white' : 'text-white hover:text-red-400'
+const buttonClasses = active ? 'text-white' : 'text-white hover:text-slate-500'
     
   return (
     <button onClick={selectTab}>
@@ -22,7 +22,7 @@ const buttonClasses = active ? 'text-white' : 'text-white hover:text-red-400'
         <motion.div
           animate={active ? 'animate' : 'initial'}
           variants={variants}
-          className='h-1 bg-red-300 mt-2 mr-3'  
+          className='h-1 bg-slate-500 mt-2 mr-3'  
         >
 
         </motion.div>
