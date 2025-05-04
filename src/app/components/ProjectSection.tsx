@@ -56,7 +56,7 @@ const ProjectSection = () => {
           />
         ))}
       </div>
-      <ul ref={ref} className='grid md:grid-cols-3 gap-5 md:gap-10 px-4 sm:px-8'>
+      <ul ref={ref} className='grid md:grid-cols-3 gap-5 md:gap-10 px-4 sm:px-40'>
         {filteredProjects.map((project, index) =>
           <motion.li 
             key={index} 
