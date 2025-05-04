@@ -2,7 +2,6 @@
 import React, {useTransition, useState} from 'react'
 import Image from 'next/image'
 import TabButton from './TabButton'
-import { title } from 'process'
 
 const TAB_DATA=[
     {
